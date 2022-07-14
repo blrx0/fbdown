@@ -16,8 +16,6 @@
     {"id":5, "app":"com.get.client"}
   ],
   "free":[
-    {"id":0, "file":0, "city":"Blrx","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
-   
-    
+    {"id":0, "file":0, "city":"Blrx","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"}
   ]
 }
