@@ -1,15 +1,13 @@
 {
   "ovpn_file":[
-    {"id":0,"file":"# OVPN_ACCESS_SERVER_PROFILE=[BLRXSERVER]
+    {"id":0,"file":"# OVPN_ACCESS_SERVER_PROFILE=[MAHBOUBSERVER]
 client
 proto tcp-client
 remote zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html 701
-http-proxy-option VERSION 1.0
-#http-proxy-option CUSTOM-HEADER CONNECT zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html@701 HTTP/1.0 
+http-proxy-option CUSTOM-HEADER CONNECT zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html@701 HTTP/1.0 
 http-proxy-option CUSTOM-HEADER Host zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html 
 http-proxy-option CUSTOM-HEADER Content-Type text/html 
 http-proxy 144.76.241.119 80
-server-poll-timeout 120
 dev tun
 resolv-retry infinite
 nobind
@@ -85,6 +83,6 @@ cce38c79dcf2aaf93dc8bff375529d1a
 3acccae72d59683a0ecf6d1258fdb1a3
 -----END OpenVPN Static key V1-----
 </tls-crypt>
-http-proxy-option CUSTOM-HEADER Content-Length 9999999999999 "},
+http-proxy-option CUSTOM-HEADER Content-Length 9999999999999"},
     {"id":1,"file":""}]
 }
