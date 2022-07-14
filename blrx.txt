@@ -1,0 +1,90 @@
+{
+  "ovpn_file":[
+    {"id":0,"file":"# OVPN_ACCESS_SERVER_PROFILE=[BLRXSERVER]
+client
+proto tcp-client
+remote zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html 701
+http-proxy-option VERSION 1.0
+#http-proxy-option CUSTOM-HEADER CONNECT zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html@701 HTTP/1.0 
+http-proxy-option CUSTOM-HEADER Host zero.alditalk-kundenbetreuung.de/datenvolumen-aufgebraucht.html 
+http-proxy-option CUSTOM-HEADER Content-Type text/html 
+http-proxy 144.76.241.119 80
+server-poll-timeout 120
+dev tun
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+verify-x509-name server_SozRjyLjrKgliQ2y name
+auth SHA256
+auth-nocache
+cipher AES-128-GCM
+tls-client
+tls-version-min 1.2
+tls-cipher TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256
+ignore-unknown-option block-outside-dns
+setenv opt block-outside-dns # Prevent Windows 10 DNS leak
+verb 3
+compress lz4
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIBwDCCAWegAwIBAgIJAObYCcGhgJPqMAoGCCqGSM49BAMCMB4xHDAaBgNVBAMM
+E2NuXzlsN3BKTURXMGdCdTJTb2cwHhcNMjIwNzEwMDgyOTU3WhcNMzIwNzA3MDgy
+OTU3WjAeMRwwGgYDVQQDDBNjbl85bDdwSk1EVzBnQnUyU29nMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEUp8D3VxLr1SZLlMVbmxjl36c0q+HIZErOFyzywhdYInG
+PihdpjpjXCzdYD9uPstdwEoLLWAfDr+GxbSEA8ZoeaOBjTCBijAdBgNVHQ4EFgQU
+cqxB8N6daf70i8ygOW6rxJgHDyswTgYDVR0jBEcwRYAUcqxB8N6daf70i8ygOW6r
+xJgHDyuhIqQgMB4xHDAaBgNVBAMME2NuXzlsN3BKTURXMGdCdTJTb2eCCQDm2AnB
+oYCT6jAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjAKBggqhkjOPQQDAgNHADBE
+AiBppS3OdjqV3hdF8uts9xY5mcWz9QapaH/5WyEpyeZxtAIgXY7pa3/M7pRrhViJ
+qaVHQ11ZeW5Rk6ZhougYEBXUxwc=
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIB0DCCAXWgAwIBAgIRALmbH3YK7bo2MvYzNCZo5jswCgYIKoZIzj0EAwIwHjEc
+MBoGA1UEAwwTY25fOWw3cEpNRFcwZ0J1MlNvZzAeFw0yMjA3MTAwODMwMTlaFw0y
+NDEwMTIwODMwMTlaMBIxEDAOBgNVBAMMB2toYWxlZGQwWTATBgcqhkjOPQIBBggq
+hkjOPQMBBwNCAAS24IQLUQgZ4b7p02cpZsJzZbj/G//jEBm4LN6Lb7ZAxTVdxBKT
+hyfM346lieVlaxX5BFdf/JanYLMBi7PE875Ho4GfMIGcMAkGA1UdEwQCMAAwHQYD
+VR0OBBYEFKcADXG62+BB+ZoLEDDNCgj4hAK7ME4GA1UdIwRHMEWAFHKsQfDenWn+
+9IvMoDluq8SYBw8roSKkIDAeMRwwGgYDVQQDDBNjbl85bDdwSk1EVzBnQnUyU29n
+ggkA5tgJwaGAk+owEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMAoG
+CCqGSM49BAMCA0kAMEYCIQDfUdwPZ2f6CUifWpIm7yjmIWn63pASfcW2AYAJTjOe
+rgIhAItw8BKu49EtbZcGdu02BvDuuvGbEUgWK3wvixcXTVnw
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg5DI8IBaHMBktpwuS
+8T+0n29s7jxlkqOBS8RHWVS2BxWhRANCAAS24IQLUQgZ4b7p02cpZsJzZbj/G//j
+EBm4LN6Lb7ZAxTVdxBKThyfM346lieVlaxX5BFdf/JanYLMBi7PE875H
+-----END PRIVATE KEY-----
+</key>
+<tls-crypt>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+9f10f0d1cc52ccf2a675e7ac764d001a
+bc0f4cba0687a953f77b519eb6a81c24
+2cb2cdedbac88e557e21706f34701c3a
+f44ae71a2dfb77423276bdc63be54811
+02e623b2e1cb9247330746c0e10cbbac
+e027143a17a5e10940a3ca43a64b3817
+f6dfb3a3c702a2153db31d481d26203d
+a86d134d086355f0ee5b9362fb7c6bc1
+be2a893fc0e704701739aa7e9f1ac19e
+c8bf6743941769952f4193e6adcd54ff
+06c6afa51498b9bd621775bc59761048
+fb5614a262c3b2185d3fc23cde246f19
+48ab5a8bc9090bc38d309d074ee9e19a
+d80e3bbd0cdd3adc97d59efa9bca8099
+cce38c79dcf2aaf93dc8bff375529d1a
+3acccae72d59683a0ecf6d1258fdb1a3
+-----END OpenVPN Static key V1-----
+</tls-crypt>
+http-proxy-option CUSTOM-HEADER Content-Length 9999999999999 "},
+    {"id":1,"file":""}]
+}
