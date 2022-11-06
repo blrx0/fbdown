@@ -97,4 +97,4 @@ if ($_POST['box']==="checked"){
   echo("yes it's checked");
 
 }
-//Copyright to CHB7 @Ziedarbi11@gmail.com .please don't remove this. you are free to use the code but with mention to the source. Thank you
+//Copyright to CHB7@gmail.com .please don't remove this. you are free to use the code but with mention to the source. Thank you
